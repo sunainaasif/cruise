@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cruise - Results </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="style.css">   
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
-
 </head>
 <body>
     <header class="header">
@@ -19,16 +19,16 @@
     </header>
     <div class="container mt-4">
         <div class="cruises-found">
-            <div>
-                <h3> 13 Cruises Found - February 2021 - Croatia | Greece </h3>
-                <h4>Showing 3</h4>
+            <div class="cruises-found-heading">
+                 <div class="main-heading"> 13 Cruises Found - February 2021 - Croatia | Greece </div>
+                <div class="sub-heading">Showing 3</div>
             </div>
-            <div>
+            <div class="cruises-found-btn">
                 <a href="javascript:;" class="change-search-btn"> Change Search</a>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-12 col-lg-3 col-sm-12">
                 <aside class="filter-aside">
                     <h4>Filter By:</h4>
                     <ul class="cruise-filter">
@@ -95,7 +95,7 @@
                 </aside>
 
             </div>
-            <div class="col-md-9">
+            <div class="col-lg-9 col-md-12 col-sm-12">
                 <div class="single-cruise">
                     <div class="image-section">
                         <div class="cruise-img-div">
@@ -107,8 +107,8 @@
                     <div class="cruise-details-section">
                         <div class="upper-details">
                             <div class="name-details">
-                                <h5>HOPABY- North <br> Dodecanese</h5>
-                                <h5><span>Gulet Boat - Wooden <br> Classic Boat</span></h5>
+                                <h5>HOPABY- North Dodecanese</h5>
+                                <h5><span>Gulet Boat - Wooden  Classic Boat</span></h5>
 
                             </div>
                             <div class="cabin-details">
@@ -125,10 +125,10 @@
 
                         </div>
                         <div class="lower-details">
-                            <table class="table table-responsive cruises-table">
+                             <!-- <table class="table table-responsive cruises-table">
                                 <thead>
                                    <tr>
-                                      <th> <i class="fas fa-clock" aria-hidden="true"></i> Dates: </th>
+                                      <th> <i class="fas fa-clock" aria-hidden="true"></i>  </th>
                                       <th> <i class="fa fa-map-marker" aria-hidden="true"></i> Check In: </th>
                                       <th> <i class="fa fa-map-marker" aria-hidden="true"></i> Check Out: </th>
                                       <th> Average price </th>
@@ -140,16 +140,421 @@
                                       <td> Feb 27 - Mar 06 </td>
                                       <td> TR: Bodrum, Muğla </td>
                                       <td> TR: Bodrum, Muğla </td>
-                                      <!--anchor--> 
+                                      
                                       <td>
-                                         <!--anchor--> <strong> €980.00 </strong><!--anchor--> 
+                                          <strong> €980.00 </strong>
                                       </td>
-                                      <!--anchor--> 
+                                      
                                       <td> <button class="btn btn-warning btn-block select-cruise-button"> Cruise Details </button> </td>
                                    </tr>
-                                   <!--anchor--> <!--anchor--> 
+                                   
                                 </tbody>
-                             </table>
+                             </table>  -->
+
+                             <div class="cruise-timeline">
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        <i class="fas fa-clock" aria-hidden="true"></i>
+                                        <span>Dates:</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        Feb 27 - Mar 06
+                                    </div>
+
+                                </div>
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <span>Check In:</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        TR: Bodrum, Muğla
+                                    </div>
+
+                                </div>
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <span>Check Out:</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        TR: Bodrum, Muğla
+                                    </div>
+
+                                </div>
+                                
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        
+                                        <span>Average price</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        €980.00
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        
+                                        <!-- <span>Average price</span> -->
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        <button class="btn btn-warning btn-block select-cruise-button"> Cruise Details </button> </td>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                           
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="single-cruise">
+                    <div class="image-section">
+                        <div class="cruise-img-div">
+                            <img src="./images/1.jpg" alt="">
+                        </div>
+                        <span class="free-cancellation"><i class="far fa-check-circle"></i>Free Cancellation</span>
+
+                    </div>
+                    <div class="cruise-details-section">
+                        <div class="upper-details">
+                            <div class="name-details">
+                                <h5>HOPABY- North Dodecanese</h5>
+                                <h5><span>Gulet Boat - Wooden  Classic Boat</span></h5>
+
+                            </div>
+                            <div class="cabin-details">
+                               <div>
+                                    <p><i class="fas fa-anchor"></i>Cabin Charter</p>
+                                    <p><i class="fas fa-bed"></i>Cabins </p>
+                               </div>
+                            </div>
+                            <div class="see-vessel-div text-center">
+                                <h6>From <b>€70.00</b> <span>* per person per night</span></h6>
+                                <a href="javascript:;" class="see-vessel-btn text-center">See Vessel</a>
+                                <span class="free-cancellation"><i class="far fa-check-circle"></i>No Credit Card Needed</span>
+                            </div>
+
+                        </div>
+                        <div class="lower-details">
+                             <!-- <table class="table table-responsive cruises-table">
+                                <thead>
+                                   <tr>
+                                      <th> <i class="fas fa-clock" aria-hidden="true"></i>  </th>
+                                      <th> <i class="fa fa-map-marker" aria-hidden="true"></i> Check In: </th>
+                                      <th> <i class="fa fa-map-marker" aria-hidden="true"></i> Check Out: </th>
+                                      <th> Average price </th>
+                                      <th>&nbsp;</th>
+                                   </tr>
+                                </thead>
+                                <tbody>
+                                   <tr  class="cruise-row ">
+                                      <td> Feb 27 - Mar 06 </td>
+                                      <td> TR: Bodrum, Muğla </td>
+                                      <td> TR: Bodrum, Muğla </td>
+                                      
+                                      <td>
+                                          <strong> €980.00 </strong>
+                                      </td>
+                                      
+                                      <td> <button class="btn btn-warning btn-block select-cruise-button"> Cruise Details </button> </td>
+                                   </tr>
+                                   
+                                </tbody>
+                             </table>  -->
+
+                             <div class="cruise-timeline">
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        <i class="fas fa-clock" aria-hidden="true"></i>
+                                        <span>Dates:</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        Feb 27 - Mar 06
+                                    </div>
+
+                                </div>
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <span>Check In:</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        TR: Bodrum, Muğla
+                                    </div>
+
+                                </div>
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <span>Check Out:</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        TR: Bodrum, Muğla
+                                    </div>
+
+                                </div>
+                                
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        
+                                        <span>Average price</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        €980.00
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        
+                                        <!-- <span>Average price</span> -->
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        <button class="btn btn-warning btn-block select-cruise-button"> Cruise Details </button> </td>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                           
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="single-cruise">
+                    <div class="image-section">
+                        <div class="cruise-img-div">
+                            <img src="./images/1.jpg" alt="">
+                        </div>
+                        <span class="free-cancellation"><i class="far fa-check-circle"></i>Free Cancellation</span>
+
+                    </div>
+                    <div class="cruise-details-section">
+                        <div class="upper-details">
+                            <div class="name-details">
+                                <h5>HOPABY- North Dodecanese</h5>
+                                <h5><span>Gulet Boat - Wooden  Classic Boat</span></h5>
+
+                            </div>
+                            <div class="cabin-details">
+                               <div>
+                                    <p><i class="fas fa-anchor"></i>Cabin Charter</p>
+                                    <p><i class="fas fa-bed"></i>Cabins </p>
+                               </div>
+                            </div>
+                            <div class="see-vessel-div text-center">
+                                <h6>From <b>€70.00</b> <span>* per person per night</span></h6>
+                                <a href="javascript:;" class="see-vessel-btn text-center">See Vessel</a>
+                                <span class="free-cancellation"><i class="far fa-check-circle"></i>No Credit Card Needed</span>
+                            </div>
+
+                        </div>
+                        <div class="lower-details">
+                             <!-- <table class="table table-responsive cruises-table">
+                                <thead>
+                                   <tr>
+                                      <th> <i class="fas fa-clock" aria-hidden="true"></i>  </th>
+                                      <th> <i class="fa fa-map-marker" aria-hidden="true"></i> Check In: </th>
+                                      <th> <i class="fa fa-map-marker" aria-hidden="true"></i> Check Out: </th>
+                                      <th> Average price </th>
+                                      <th>&nbsp;</th>
+                                   </tr>
+                                </thead>
+                                <tbody>
+                                   <tr  class="cruise-row ">
+                                      <td> Feb 27 - Mar 06 </td>
+                                      <td> TR: Bodrum, Muğla </td>
+                                      <td> TR: Bodrum, Muğla </td>
+                                      
+                                      <td>
+                                          <strong> €980.00 </strong>
+                                      </td>
+                                      
+                                      <td> <button class="btn btn-warning btn-block select-cruise-button"> Cruise Details </button> </td>
+                                   </tr>
+                                   
+                                </tbody>
+                             </table>  -->
+
+                             <div class="cruise-timeline">
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        <i class="fas fa-clock" aria-hidden="true"></i>
+                                        <span>Dates:</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        Feb 27 - Mar 06
+                                    </div>
+
+                                </div>
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <span>Check In:</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        TR: Bodrum, Muğla
+                                    </div>
+
+                                </div>
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <span>Check Out:</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        TR: Bodrum, Muğla
+                                    </div>
+
+                                </div>
+                                
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        
+                                        <span>Average price</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        €980.00
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        
+                                        <!-- <span>Average price</span> -->
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        <button class="btn btn-warning btn-block select-cruise-button"> Cruise Details </button> </td>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                           
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="single-cruise">
+                    <div class="image-section">
+                        <div class="cruise-img-div">
+                            <img src="./images/1.jpg" alt="">
+                        </div>
+                        <span class="free-cancellation"><i class="far fa-check-circle"></i>Free Cancellation</span>
+
+                    </div>
+                    <div class="cruise-details-section">
+                        <div class="upper-details">
+                            <div class="name-details">
+                                <h5>HOPABY- North Dodecanese</h5>
+                                <h5><span>Gulet Boat - Wooden  Classic Boat</span></h5>
+
+                            </div>
+                            <div class="cabin-details">
+                               <div>
+                                    <p><i class="fas fa-anchor"></i>Cabin Charter</p>
+                                    <p><i class="fas fa-bed"></i>Cabins </p>
+                               </div>
+                            </div>
+                            <div class="see-vessel-div text-center">
+                                <h6>From <b>€70.00</b> <span>* per person per night</span></h6>
+                                <a href="javascript:;" class="see-vessel-btn text-center">See Vessel</a>
+                                <span class="free-cancellation"><i class="far fa-check-circle"></i>No Credit Card Needed</span>
+                            </div>
+
+                        </div>
+                        <div class="lower-details">
+                             <!-- <table class="table table-responsive cruises-table">
+                                <thead>
+                                   <tr>
+                                      <th> <i class="fas fa-clock" aria-hidden="true"></i>  </th>
+                                      <th> <i class="fa fa-map-marker" aria-hidden="true"></i> Check In: </th>
+                                      <th> <i class="fa fa-map-marker" aria-hidden="true"></i> Check Out: </th>
+                                      <th> Average price </th>
+                                      <th>&nbsp;</th>
+                                   </tr>
+                                </thead>
+                                <tbody>
+                                   <tr  class="cruise-row ">
+                                      <td> Feb 27 - Mar 06 </td>
+                                      <td> TR: Bodrum, Muğla </td>
+                                      <td> TR: Bodrum, Muğla </td>
+                                      
+                                      <td>
+                                          <strong> €980.00 </strong>
+                                      </td>
+                                      
+                                      <td> <button class="btn btn-warning btn-block select-cruise-button"> Cruise Details </button> </td>
+                                   </tr>
+                                   
+                                </tbody>
+                             </table>  -->
+
+                             <div class="cruise-timeline">
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        <i class="fas fa-clock" aria-hidden="true"></i>
+                                        <span>Dates:</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        Feb 27 - Mar 06
+                                    </div>
+
+                                </div>
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <span>Check In:</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        TR: Bodrum, Muğla
+                                    </div>
+
+                                </div>
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        <span>Check Out:</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        TR: Bodrum, Muğla
+                                    </div>
+
+                                </div>
+                                
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        
+                                        <span>Average price</span>
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        €980.00
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="cruise-timeline-col">
+                                    <div class="cruise-timeline-col-heading">
+                                        
+                                        <!-- <span>Average price</span> -->
+                                    </div>
+                                    <div class="cruise-timeline-col-text">
+                                        <button class="btn btn-warning btn-block select-cruise-button"> Cruise Details </button> </td>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                           
 
                         </div>
 

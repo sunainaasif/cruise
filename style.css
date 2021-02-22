@@ -71,16 +71,26 @@ a.search-bar-btn i {
 .cruises-found {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.cruises-found h3 {
+
+.cruises-found .cruises-found-heading {
+  flex: 3;
+}
+.cruises-found .cruises-found-heading .main-heading {
   font-size: 30.758000000000003px;
   color: #565656;
   font-weight: 300;
 }
-.cruises-found h4 {
+.cruises-found .cruises-found-heading .sub-heading {
   font-size: 23.66px;
   color: #565656;
   font-weight: 300;
+}
+
+.cruises-found-btn {
+  flex: 1;
+  text-align: end;
 }
 .change-search-btn {
   padding: 6px 12px;
@@ -93,6 +103,13 @@ a.search-bar-btn i {
   border: 1px solid #183854;
   color: #000;
   border-radius: 3px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.change-search-btn:hover {
+  text-decoration: none;
+  color: #000;
 }
 .filter-aside {
   padding: 10px 0px 0;
@@ -143,7 +160,7 @@ ul.vessel-type li i {
 .single-cruise {
   display: block;
   position: relative;
-  padding: 17px;
+  padding: 16px 10px;
   border: 1px solid #e6e6e6;
   color: #737373;
   -webkit-transition: 0.2s;
@@ -152,11 +169,13 @@ ul.vessel-type li i {
   -ms-transition: 0.2s;
   transition: 0.2s;
   display: flex;
+  margin-bottom: 20px;
 }
 .cruise-img-div {
   overflow: hidden;
   width: 200px;
   cursor: pointer;
+  margin-right: 16px;
 }
 
 .cruise-img-div img {
@@ -178,6 +197,7 @@ ul.vessel-type li i {
 .upper-details {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .name-details h5 {
   font-size: 18px;
@@ -196,10 +216,13 @@ ul.vessel-type li i {
   border-color: #bce8f1;
   padding: 10px;
   border-radius: 5px;
-  height: 80px;
-  width: 150px;
+  /* height: 80px;
+  width: 150px; */
+  min-width: 180px;
   padding: 15px;
+  margin-right: 16px;
 }
+
 .cabin-details div p {
   margin-bottom: 0;
 }
@@ -219,7 +242,17 @@ ul.vessel-type li i {
   background: #3c76a9;
   border-color: #3c76a9;
   color: #fff;
-  padding: 8px 50px;
+  padding: 6px 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+}
+
+.see-vessel-btn:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #286090;
 }
 .cruises-table tr td {
   overflow: hidden;
@@ -236,12 +269,131 @@ ul.vessel-type li i {
   margin: bottom 0;
 }
 
+.cruise-timeline {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+.cruise-timeline-col {
+  margin-bottom: 16px;
+  margin-right: 15px;
+}
+.cruise-timeline-col-heading {
+}
+
+.cruise-timeline-col-heading span {
+  /* color: #737373; */
+  font-weight: bold;
+}
+
+.cruise-timeline-col-text {
+}
+
+.select-cruise-button {
+  background-color: #f0ad4e;
+  color: #fff;
+  width: 100%;
+
+  transition: 0.2s;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.select-cruise-button:hover {
+  background-color: #ec971f;
+  color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+  .filter-aside {
+    margin-bottom: 30px;
+  }
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .single-cruise {
+    flex-direction: column;
+  }
+
+  .cruise-img-div {
+    width: 100%;
+  }
+
+  .cruise-timeline {
+    justify-content: center;
+  }
+
+  .upper-details {
+    flex-direction: column;
+  }
+
+  .image-section {
+    margin-bottom: 16px;
+  }
+
+  .cabin-details {
+    align-self: flex-start;
+    margin-bottom: 16px;
+  }
+  .see-vessel-div {
+    width: 50%;
+    align-self: center;
+  }
+
+  .name-details {
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .see-vessel-div {
+    width: 70%;
+    align-self: flex-start;
+  }
+
+  .see-vessel-div h6 {
+    text-align: start;
+  }
+  .cruise-timeline {
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .free-cancellation {
+    text-align: start;
+  }
+
+  .upper-details {
+    margin-bottom: 50px;
+  }
+}
+
 @media only screen and (max-width: 776px) {
   .search-bar-select {
     border-right-width: 1px;
     border-radius: 5px;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .cruises-found {
+    flex-direction: column;
+    margin-bottom: 16px;
+    align-items: flex-start;
+  }
+
+  .cruises-found-heading {
+    margin-bottom: 10px;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .search-bar-form {
     margin-left: 5%;
