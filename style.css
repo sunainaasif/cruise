@@ -290,10 +290,15 @@ ul.vessel-type li i {
 .cruise-timeline-col-text {
 }
 
+.select-cruise-button-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .select-cruise-button {
   background-color: #f0ad4e;
   color: #fff;
-  width: 100%;
+  /* width: 100%; */
 
   transition: 0.2s;
   padding-top: 2px;
@@ -380,6 +385,10 @@ ul.vessel-type li i {
     border-right-width: 1px;
     border-radius: 5px;
   }
+
+  .select-cruise-button-div {
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -401,5 +410,12 @@ ul.vessel-type li i {
   }
   .search-bar-btn {
     padding: 10px 20px;
+  }
+  .select-cruise-button-div {
+    width: 100%;
+  }
+
+  .select-cruise-button {
+    width: 100%;
   }
 }
