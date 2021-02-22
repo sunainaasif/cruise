@@ -310,6 +310,16 @@ ul.vessel-type li i {
   color: #fff;
 }
 
+.showing-results {
+  font-size: 15px;
+  background-color: #f2f2f2;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: #737373;
+}
+
 @media only screen and (max-width: 992px) {
   .filter-aside {
     margin-bottom: 30px;
@@ -354,32 +364,6 @@ ul.vessel-type li i {
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .see-vessel-div {
-    width: 70%;
-    align-self: flex-start;
-  }
-
-  .see-vessel-div h6 {
-    text-align: start;
-  }
-  .cruise-timeline {
-    flex-direction: column;
-  }
-
-  .container {
-    max-width: 100%;
-  }
-
-  .free-cancellation {
-    text-align: start;
-  }
-
-  .upper-details {
-    margin-bottom: 50px;
-  }
-}
-
 @media only screen and (max-width: 776px) {
   .search-bar-select {
     border-right-width: 1px;
@@ -417,5 +401,35 @@ ul.vessel-type li i {
 
   .select-cruise-button {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .see-vessel-div {
+    width: 70%;
+    align-self: flex-start;
+  }
+
+  .see-vessel-div h6 {
+    text-align: start;
+  }
+  .cruise-timeline {
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .free-cancellation {
+    text-align: start;
+  }
+
+  .upper-details {
+    margin-bottom: 50px;
+  }
+
+  .showing-results {
+    flex-direction: column;
   }
 }
