@@ -1,0 +1,253 @@
+.header {
+  padding-bottom: 10px;
+  text-align: center;
+  position: relative;
+  height: 60px;
+  background-color: #fff;
+  background: #183854;
+  color: #fff;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 12%);
+  z-index: 12;
+}
+/* Search */
+
+/* Search bar  */
+.search-bar-form h4 {
+  margin-bottom: 1px;
+  font-size: 18px;
+  /* color: white; */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #16affd;
+  margin-top: 10px;
+}
+.search-bar-select {
+  width: 100%;
+  cursor: pointer;
+  border-right-width: 0;
+  height: 48px;
+  padding: 10px;
+  line-height: 18px !important;
+  border-color: #ccc;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  apperance: none;
+}
+.search-bar-form .row .col-md-3,
+.search-bar-form .row .col-md-12 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.first-select {
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+.last-select {
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  border-right-width: 1px;
+}
+.search-bar-btn-div {
+  margin-top: 30px;
+}
+.search-bar-btn {
+  padding: 10px 70px;
+  font-size: 18px;
+  transition: 0.2s;
+
+  color: #fff;
+  background-color: #16affd;
+  border-color: #16affd;
+
+  outline: 0;
+  -webkit-appearance: none;
+  line-height: 18px !important;
+}
+a.search-bar-btn i {
+  margin-left: 12px;
+}
+
+/* --- */
+.cruises-found {
+  display: flex;
+  justify-content: space-between;
+}
+.cruises-found h3 {
+  font-size: 30.758000000000003px;
+  color: #565656;
+  font-weight: 300;
+}
+.cruises-found h4 {
+  font-size: 23.66px;
+  color: #565656;
+  font-weight: 300;
+}
+.change-search-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  vertical-align: middle;
+  background: #ffffe4;
+  border: 1px solid #183854;
+  color: #000;
+  border-radius: 3px;
+}
+.filter-aside {
+  padding: 10px 0px 0;
+  background: #ffffe4;
+  border: 1px solid #183854;
+  border-radius: 5px;
+}
+ul.cruise-filter > li {
+  list-style: none;
+  border-top: 1px solid #183854;
+  padding: 10px 15px;
+}
+
+ul.cruise-filter {
+  padding: 0;
+}
+
+.filter-aside h4 {
+  text-align: center;
+  color: #565656;
+}
+.flex-it {
+  display: flex;
+}
+.w-100 {
+  width: 100%;
+}
+ul.cruise-filter li h5 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #565656;
+}
+
+ul.cruise-filter li div span {
+  font-size: 15px;
+}
+ul.vessel-type li {
+  list-style: none;
+}
+
+ul.vessel-type {
+  padding: 0;
+}
+
+ul.vessel-type li i {
+  padding: 0 10px;
+}
+.single-cruise {
+  display: block;
+  position: relative;
+  padding: 17px;
+  border: 1px solid #e6e6e6;
+  color: #737373;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+  display: flex;
+}
+.cruise-img-div {
+  overflow: hidden;
+  width: 200px;
+  cursor: pointer;
+}
+
+.cruise-img-div img {
+  width: 100%;
+  transition: 1s all ease-in-out;
+}
+.cruise-img-div img:hover {
+  transform: scale(1.5);
+  filter: grayscale(50%);
+}
+.free-cancellation {
+  color: #559416;
+  font-weight: bold;
+  margin: 0px 0;
+}
+.free-cancellation i {
+  margin-right: 5px;
+}
+.upper-details {
+  display: flex;
+  justify-content: space-between;
+}
+.name-details h5 {
+  font-size: 18px;
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+.name-details h5 span {
+  font-size: 16px;
+  font-weight: normal;
+  color: #317fae;
+}
+.cabin-details div {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  padding: 10px;
+  border-radius: 5px;
+  height: 80px;
+  width: 150px;
+  padding: 15px;
+}
+.cabin-details div p {
+  margin-bottom: 0;
+}
+.cabin-details div p i {
+  margin-right: 5px;
+}
+.see-vessel-div h6 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.see-vessel-div b,
+.see-vessel-div span {
+  display: block;
+}
+.see-vessel-btn {
+  border-radius: 5px;
+  background: #3c76a9;
+  border-color: #3c76a9;
+  color: #fff;
+  padding: 8px 50px;
+}
+.cruises-table tr td {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 20% !important;
+  max-width: 140px;
+}
+.cruises-table tr tH {
+  width: 20% !important;
+  max-width: 140px;
+}
+.cruises-table {
+  margin: bottom 0;
+}
+
+@media only screen and (max-width: 776px) {
+  .search-bar-select {
+    border-right-width: 1px;
+    border-radius: 5px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .search-bar-form {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .search-bar-btn {
+    padding: 10px 20px;
+  }
+}
