@@ -1,103 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Search Bar </title>
-        <link rel="stylesheet" href="style.css">   
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
-    
-    </head>
-<body>
-    <div class="container mt-5">
-        <form class="search-bar-form" action="">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Search Bar </title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+   </head>
+   <body>
+      <div class="container mt-5">
+         <form class="search-bar-form" action="">
             <div class="row">
-                <div class="col-md-3 col-sm-12">
-                    <h4>When</h4>
-                    <select class="search-bar-select first-select" name="" id="">
-                        <option value="">02/2021</option>
-                        <option value="">03/2021</option>
-                        <option value="">04/2021</option>
-                    </select>
-                    
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <h4>Where</h4>
-                    <select class="search-bar-select" name="" id="">
-                        <option value="">Select Country</option>
-                        <option value="">Croatia</option>
-                        <option value="">Greece</option>
-                        <option value="">Chile</option>
-                    </select>
-
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <h4>Cruise Type</h4>
-                    <select class="search-bar-select " name="" id="">
-                        <option value="">Select Type</option>
-                        <option value="">All</option>
-                        <option value="">Bareboat</option>
-                        <option value="">Vessel</option>
-                    </select>
-                   
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <h4>Travellers</h4>
-                    <a href="javascript:;" id="travellers-dropdown-btn" class="search-bar-select last-select">Select Travellers</a>
-                    <div class="travellers-dropdown" style="display: none;">
-                        <h5 class="dropdown-head">Travellers</h5>                                                  
-                            <div class="dropdown-inner-div">
-                                <div class="counter-divs">
-                                    <h6>Cabins</h6>
-                                    <a href="javascript:;" class="counter-btns"><i class="fa fa-minus"></i></a>
-                                    <span class="value"><strong>1</strong></span>
-                                    <a href="javascript:;"  class="counter-btns"><i class="fa fa-plus"></i></a>
-                                </div>
-                           
-                            
-                                <div class="counter-divs">
-                                    <h6>Adults:</h6>
-                                    <a href="javascript:;" class="counter-btns"><i class="fa fa-minus"></i></a>
-                                    <span class="value"><strong>1</strong></span>
-                                    <a href="javascript:;"  class="counter-btns"><i class="fa fa-plus"></i></a>
-                                </div>
-                           
-                                <div class="counter-divs">
-                                    <h6>Children:</h6>
-                                    <a href="javascript:;" class="counter-btns"><i class="fa fa-minus"></i></a>
-                                    <span class="value"><strong>1</strong></span>
-                                    <a href="javascript:;"  class="counter-btns"><i class="fa fa-plus"></i></a>
-                                </div>
-                            
-                            <small>Age limits & policies for children may change, please verify with our experts</small>
-                            <a href="javascript:;" class="apply"> Apply </a>
+               <div class="col-md-3 col-sm-12">
+                  <h4>When</h4>
+                  <select class="search-bar-select first-select" name="" id="">
+                     <option value="">02/2021</option>
+                     <option value="">03/2021</option>
+                     <option value="">04/2021</option>
+                  </select>
+               </div>
+               <div class="col-md-3 col-sm-12">
+                  <h4>Where</h4>
+                  <select class="search-bar-select" name="" id="">
+                     <option value="">Select Country</option>
+                     <option value="">Croatia</option>
+                     <option value="">Greece</option>
+                     <option value="">Chile</option>
+                  </select>
+               </div>
+               <div class="col-md-3 col-sm-12">
+                  <h4>Cruise Type</h4>
+                  <select class="search-bar-select " name="" id="">
+                     <option value="">Select Type</option>
+                     <option value="">All</option>
+                     <option value="">Bareboat</option>
+                     <option value="">Vessel</option>
+                  </select>
+               </div>
+               <div class="col-md-3 col-sm-12">
+                  <h4>Travellers</h4>
+                  <a href="javascript:;" id="travellers-dropdown-btn" class="search-bar-select last-select">Select Travellers</a>
+                  <div class="travellers-dropdown" style="display: none;">
+                     <h5 class="dropdown-head">Travellers</h5>
+                     <div class="dropdown-inner-div">
+                        <div class="counter-divs">
+                           <h6>Cabins</h6>
+                           <a href="javascript:;" class="counter-btns"><i class="fa fa-minus"></i></a>
+                           <span class="value"><strong>1</strong></span>
+                           <a href="javascript:;"  class="counter-btns"><i class="fa fa-plus"></i></a>
                         </div>
-                    </div>
-                
-                </div>
+                        <div class="counter-divs">
+                           <h6>Adults:</h6>
+                           <a href="javascript:;" class="counter-btns"><i class="fa fa-minus"></i></a>
+                           <span class="value"><strong>1</strong></span>
+                           <a href="javascript:;"  class="counter-btns"><i class="fa fa-plus"></i></a>
+                        </div>
+                        <div class="counter-divs">
+                           <h6>Children:</h6>
+                           <a href="javascript:;" class="counter-btns"><i class="fa fa-minus"></i></a>
+                           <span class="value"><strong>1</strong></span>
+                           <a href="javascript:;"  class="counter-btns"><i class="fa fa-plus"></i></a>
+                        </div>
+                        <small>Age limits & policies for children may change, please verify with our experts</small>
+                        <a href="javascript:;" class="apply"> Apply </a>
+                     </div>
+                  </div>
+               </div>
             </div>
             <div class="row">
-                <div class="col-md-12 text-right">
-                   <div class="search-bar-btn-div">
-                      <a class="search-bar-btn" href="javascript:;">Search Cruises <i class="fas fa-arrow-right"></i></a>
-                   </div>
-                </div>
+               <div class="col-md-12 text-right">
+                  <div class="search-bar-btn-div">
+                     <a class="search-bar-btn" href="javascript:;">Search Cruises <i class="fas fa-arrow-right"></i></a>
+                  </div>
+               </div>
             </div>
-        </form>
-    </div>
-
-    <script>
-        $(document).ready(function(){
-            $('#travellers-dropdown-btn').click(function() {
-                $('.travellers-dropdown').toggle();
-
-  });
-});
-    </script>
-</body>
+         </form>
+      </div>
+      <script>
+         $(document).ready(function(){
+             $('#travellers-dropdown-btn').click(function() {
+                 $('.travellers-dropdown').toggle();
+         });
+         });
+      </script>
+   </body>
 </html>
