@@ -18,16 +18,16 @@
         <form class="search-bar-form" action="">
             <div class="row">
                 <div class="col-md-3 col-sm-12">
-                    <h4>Pick Up Location</h4>
+                    <h4>When</h4>
                     <select class="search-bar-select first-select" name="" id="">
-                        <option value="">Select Country</option>
-                        <option value="">Croatia</option>
-                        <option value="">Greece</option>
-                        <option value="">Chile</option>
+                        <option value="">02/2021</option>
+                        <option value="">03/2021</option>
+                        <option value="">04/2021</option>
                     </select>
+                    
                 </div>
                 <div class="col-md-3 col-sm-12">
-                    <h4>Drop Off Location</h4>
+                    <h4>Where</h4>
                     <select class="search-bar-select" name="" id="">
                         <option value="">Select Country</option>
                         <option value="">Croatia</option>
@@ -37,32 +37,67 @@
 
                 </div>
                 <div class="col-md-3 col-sm-12">
-                    <h4>Pick Up Date</h4>
-                    <select class="search-bar-select" name="" id="">
-                        <option value="">02/2021</option>
-                        <option value="">03/2021</option>
-                        <option value="">04/2021</option>
+                    <h4>Cruise Type</h4>
+                    <select class="search-bar-select " name="" id="">
+                        <option value="">Select Type</option>
+                        <option value="">All</option>
+                        <option value="">Bareboat</option>
+                        <option value="">Vessel</option>
                     </select>
+                   
                 </div>
                 <div class="col-md-3 col-sm-12">
-                    <h4>Dropp Off Date</h4>
-                    <select class="search-bar-select last-select" name="" id="">
-                        <option value="">02/2021</option>
-                        <option value="">02/2021</option>
-                        <option value="">03/2021</option>
-                    </select>
+                    <h4>Travellers</h4>
+                    <a href="javascript:;" id="travellers-dropdown-btn" class="search-bar-select last-select">Select Travellers</a>
+                    <div class="travellers-dropdown" style="display: none;">
+                        <h5 class="dropdown-head">Travellers</h5>                                                  
+                            <div class="dropdown-inner-div">
+                                <div class="counter-divs">
+                                    <h6>Cabins</h6>
+                                    <a href="javascript:;" class="counter-btns"><i class="fa fa-minus"></i></a>
+                                    <span class="value"><strong>1</strong></span>
+                                    <a href="javascript:;"  class="counter-btns"><i class="fa fa-plus"></i></a>
+                                </div>
+                           
+                            
+                                <div class="counter-divs">
+                                    <h6>Adults:</h6>
+                                    <a href="javascript:;" class="counter-btns"><i class="fa fa-minus"></i></a>
+                                    <span class="value"><strong>1</strong></span>
+                                    <a href="javascript:;"  class="counter-btns"><i class="fa fa-plus"></i></a>
+                                </div>
+                           
+                                <div class="counter-divs">
+                                    <h6>Children:</h6>
+                                    <a href="javascript:;" class="counter-btns"><i class="fa fa-minus"></i></a>
+                                    <span class="value"><strong>1</strong></span>
+                                    <a href="javascript:;"  class="counter-btns"><i class="fa fa-plus"></i></a>
+                                </div>
+                            
+                            <small>Age limits & policies for children may change, please verify with our experts</small>
+                            <a href="javascript:;" class="apply"> Apply </a>
+                        </div>
+                    </div>
+                
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 text-right">
                    <div class="search-bar-btn-div">
-                      <a class="search-bar-btn" href="javascript:;">Search Cars <i class="fas fa-arrow-right"></i></a>
+                      <a class="search-bar-btn" href="javascript:;">Search Cruises <i class="fas fa-arrow-right"></i></a>
                    </div>
                 </div>
             </div>
         </form>
     </div>
 
-    
+    <script>
+        $(document).ready(function(){
+            $('#travellers-dropdown-btn').click(function() {
+                $('.travellers-dropdown').toggle();
+
+  });
+});
+    </script>
 </body>
 </html>
